@@ -16,6 +16,10 @@
 
 #------------------------------------------------------------ FEATURE - FILE MV/CP
 
+if [ ! -d "$HOME/.local/share/Trash/files" ]; then
+  mkdir -p "$HOME/.local/share/Trash/files" 
+fi
+
 # cd ke folder, dengan menyimpan history cd, biar nanti bisa back ke folder sebelumnya
 # cara pakai : `acd _nama_folder_`
 function acd(){
