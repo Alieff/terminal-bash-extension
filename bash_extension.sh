@@ -13,7 +13,6 @@
 # if [ ! -f "$HOME/Documents/.script/database/teleporter_$global_context" ]; then
 #   touch "$HOME/Documents/.script/database/teleporter_$global_context";
 # fi
-source "$HOME/Documents/.script/project-specific-script/tjetak.sh";
 
 #------------------------------------------------------------ FEATURE - FILE MV/CP
 
@@ -254,10 +253,6 @@ function rmt(){
   verboseMode=0
 }
 
-
-#----------------------------------------------------------------------------------- FEATURE - TELEPORTATION_SYSTEM
-
-source /home/pulpen/Documents/.script/teleportation_system.sh
 
 #----------------------------------------------------------------------------------- FEATURE - COPAS
 # melist daftar command yang ada di fitur "COPAS"
@@ -761,5 +756,3 @@ function track_generate_links(){
     ln -s ${cmd_array[1]} ${cmd_array[2]}
   done < "$1"
 }
-
-source $HOME/Documents/.script/project-specific-script/cscope.generator
