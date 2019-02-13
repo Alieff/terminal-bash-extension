@@ -681,11 +681,6 @@ function sceless(){
 function vlookup(){
   $1 | grep '$2' | awk '{printf "%s \n",$'$3'}'; 
 }
-#menjalankan audacious 
-function auda(){
-  echo $1
-  audacious -EH $1 & clear ; fg ; clear
-}
 
 function ftpupload(){
   local username=$1
