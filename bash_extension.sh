@@ -270,6 +270,9 @@ alias bersihkan_potongan=' echo "" > $HOME/Documents/.script/database/cutter_pas
 # menyimpan file yang akan dipindahkan ke suatu database temporary
 # cara pakai : `tandai _nama_file(bisa > 1)_`
 function tandai(){
+  if [ ! -f $HOME/Documents/.script/database/cutter_paster ]; then
+    touch $HOME/Documents/.script/database/cutter_paster
+  fi
   if [ $(wc -l $HOME/Documents/.script/database/cutter_paster | awk '{print $1}') -gt 1 ]; then 
     echo -e "\e[92mappending\e[0m $@" ; 
   else
