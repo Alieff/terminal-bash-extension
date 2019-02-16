@@ -1,6 +1,6 @@
 # bash-extension
 
-doing various task for you work at terminal
+Doing various task at bash terminal
 
 ## Installation
 
