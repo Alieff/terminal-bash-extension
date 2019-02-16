@@ -336,6 +336,7 @@ function cppas(){
 }
 
 #------------------------------------------------------------------------ MINI FUNCTION
+# set terminal tab title
 function set-title() {
   if [[ -z "$ORIG" ]]; then
     ORIG=$PS1
@@ -405,6 +406,8 @@ function lengkapi(){
 
 
 # mengisi file $1 di baris ke $3 dengan string $2
+# usage list_manager <filename> <list content> <list index>
+# example list_manager lala.txt "pinnaple" 3 , it will put "pinnaple" in line 3
 function list_manager(){
   local nama_file=$1
   local isi_list=$2
