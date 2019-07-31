@@ -10,6 +10,3 @@ echo "executable removed" : "rm $destination_path/$script_name"
 # remove autosource
 sed -ie '/# bash_extension.*/,+1d' $HOME/.bashrc
 echo "autosource removed"
-
-bash "$installer_path/uninstall2.sh"
-
