@@ -1,6 +1,6 @@
 installer_path="$(dirname ${BASH_SOURCE[0]})"
 destination_path="$HOME/Documents/.script"
-script_name="bash_extension.sh"
+script_name="bash_aliases_portable.sh"
 
 
 # remove executable
@@ -12,3 +12,4 @@ sed -ie '/# bash_extension.*/,+1d' $HOME/.bashrc
 echo "autosource removed"
 
 bash "$installer_path/uninstall2.sh"
+

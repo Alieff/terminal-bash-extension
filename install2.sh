@@ -2,7 +2,7 @@
 mkdir -p "$HOME/Documents/.script/database"
 installer_path="$(dirname ${BASH_SOURCE[0]})"
 destination_path="$HOME/Documents/.script"
-script_name="./bash_aliases_portable.sh"
+script_name="bash_aliases_portable.sh"
 
 # copy the script 
 if [[ -z "$(ls $HOME/Documents/.script | grep bash_extension\.sh)" ]]; then 
