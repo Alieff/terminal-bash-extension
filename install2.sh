@@ -5,7 +5,7 @@ destination_path="$HOME/Documents/.script"
 script_name="bash_aliases_portable.sh"
 
 # copy the script 
-if [[ -z "$(ls $HOME/Documents/.script | grep bash_extension\.sh)" ]]; then 
+if [[ -z "$(ls $destination_path | grep $script_name)" ]]; then 
   # copy source
   "cp" "$installer_path/$script_name" "$destination_path"
   echo "Copying done" : "cp $installer_path/$script_name" "$destination_path"
@@ -16,7 +16,7 @@ else # case if already installed
 fi
 
 # register the script for auto source
-if [[ -z "$(cat $HOME/.bashrc | grep bash_extension)" ]]; then 
+if [[ -z "$(cat $HOME/.bashrc | grep $script_name)" ]]; then 
   # add auto source script
   echo "# bash_extension, don't change 1 line below this line, use uninstall instead" >> $HOME/.bashrc
   "echo" "source $HOME/Documents/.script/$script_name" >> $HOME/.bashrc
